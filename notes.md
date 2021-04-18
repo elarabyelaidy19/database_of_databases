@@ -22,7 +22,6 @@
 * testing and maintaince 
 
 
-
 ## File Based System 
 
 ## Database  
@@ -40,6 +39,18 @@
  * Entities - Rectangle 
  * Attributes - Ellipse 
  * Relationship - Diamond  
+
+## Relational Constrains 
+ * Domain Constrains
+ * Key Constrains 
+ * Referential Integrity Constrains
+
+## operation in Relational Model  
+ * Insert 
+ * Delete 
+ * Modify 
+ * Select 
+ 
 
 ## Strong Vs Weak Entity 
  * 
