@@ -11,4 +11,5 @@
  * videos 
  * 
 
-# 
+# Atributes 
+ * **User** User_ID, user_name, password, mail, phone_number, age, address, status, sex, job,
