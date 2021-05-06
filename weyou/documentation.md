@@ -10,7 +10,7 @@
  * Photos 
  * videos 
  * Shares 
- 
+
 
 # Atributes 
  * **User**
@@ -18,7 +18,7 @@
  * **Friends** 
    * Friend_Id, User_ID 
  * **psots** 
-   * user_ID, post_content, post_ID, Post_date 
+   * user_ID, post_content, post_ID, Post_date.  
  * **pages** 
    * Page_ID, Page_name, Page_content, Likes 
  * **Groups** 
@@ -33,3 +33,5 @@
     * Photo_id, Post_id, photo_content, User_id  
   * **Videos** 
      * Video_id, post_id, Video_Content, User_ID 
+  * **shares** 
+     * post_ID, User_Id 
