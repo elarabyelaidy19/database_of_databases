@@ -16,4 +16,5 @@
  * **Friends** Friend_Id, User_ID 
  * **psots** user_ID, post_content, post_ID, Post_date 
  * **pages** Page_ID, Page_name, Page_content, Likes 
- * **Groups** Group_Id, Group_Name, Group_content, Groups_Members, 
+ * **Groups** Group_Id, Group_Name, Group_content, Groups_Members 
+ * **Chat** Caht_ID, Sender, receiver, message
