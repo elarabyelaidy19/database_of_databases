@@ -25,4 +25,6 @@
  * **Chats**  
    * Caht_ID, Sender, receiver, message_content 
  * **comments** 
-   * comment_ID, User_ID, comment_content>.
+   * comment_ID, User_ID, post_ID, comment_content, comment_date. 
+ * **Reactions** 
+   * reaction_ID, Uost_id, User_id.   
