@@ -14,3 +14,4 @@
 # Atributes 
  * **User** User_ID, user_name, password, mail, phone_number, age, address, status, sex, job, education
  * **Friends** Friend_Id, User_ID 
+ * **psots** user_ID, post_content, post_ID, Post_date 
