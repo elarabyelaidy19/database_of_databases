@@ -9,7 +9,7 @@
  * Reaction
  * Photos 
  * videos 
- * 
+ * Shares
 
 # Atributes 
  * **User**
@@ -27,4 +27,8 @@
  * **comments** 
    * comment_ID, User_ID, post_ID, comment_content, comment_date. 
  * **Reactions** 
-   * reaction_ID, Uost_id, User_id.   
+   * reaction_ID, post_id, User_id.   
+ * **photos** 
+    * Photo_id, Post_id, photo_content  
+  * **Videos** 
+     * Video
