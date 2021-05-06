@@ -9,7 +9,8 @@
  * Reaction
  * Photos 
  * videos 
- * Shares
+ * Shares 
+ 
 
 # Atributes 
  * **User**
@@ -29,6 +30,6 @@
  * **Reactions** 
    * reaction_ID, post_id, User_id.   
  * **photos** 
-    * Photo_id, Post_id, photo_content  
+    * Photo_id, Post_id, photo_content, User_id  
   * **Videos** 
-     * Video
+     * Video_id, post_id, Video_Content, User_ID 
