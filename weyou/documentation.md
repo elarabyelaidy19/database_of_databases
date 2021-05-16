@@ -33,3 +33,7 @@
     * Photo_id, Post_id, photo_content
   * **shares** 
      * post_ID, User_Id 
+
+
+# Relational schema 
+ **User**(User_ID(PK), user_name, password, mail, Mobile, DO_Birth, Address, Status, Sex, Job, Education)
