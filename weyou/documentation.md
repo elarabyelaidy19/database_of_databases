@@ -20,8 +20,6 @@
    * Page_ID, Page_name, Page_Content
  * **Page_Likes** 
     * User_Id, Page_Id  
- * **Chats**  
-   * Caht_ID, Sender, receiver, message_content 
  * **comments** 
    * comment_ID, User_ID, post_ID, comment_content, comment_date. 
  * **Reactions** 
@@ -35,18 +33,16 @@
 # Relational schema 
  * **User**(User_ID(PK), FName, LName, password, mail, Mobile, DO_Birth, city, country, Status, Sex, Job, Education)
 
- * **psots**(user_ID, post_content, post_ID, Post_date.)  
+ * **psots**(post_ID(PK), user_ID(FK), post_content, , Post_date.)  
 
- * **pages**(Page_ID, Page_name, Page_Content)
+ * **pages**(Page_ID(PK), Page_name, Page_Content)
 
  * **Page_Likes**(User_Id, Page_Id)  
 
- * **Chats**(Caht_ID, Sender, receiver, message_content) 
+ * **comments**(comment_ID(PK), User_ID(FK), post_ID(FK), comment_content, comment_date.) 
 
- * **comments**(comment_ID, User_ID, post_ID, comment_content, comment_date.) 
-
- * **Reactions**(reaction_ID, post_id, User_id.)   
+ * **Reactions**(reaction_ID(PK), post_id(FK), User_id(FK))   
 
  * **photos**(Photo_id, Post_id, photo_content)
- 
+
   * **shares**(post_ID, User_Id) 
