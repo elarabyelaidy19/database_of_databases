@@ -37,12 +37,12 @@
 
  * **pages**(Page_ID(PK), Page_name, Page_Content)
 
- * **Page_Likes**(User_Id, Page_Id)  
+ * **Page_Likes**(like_id(PK), User_Id(FK), Page_Id(FK))  
 
  * **comments**(comment_ID(PK), User_ID(FK), post_ID(FK), comment_content, comment_date.) 
 
  * **Reactions**(reaction_ID(PK), post_id(FK), User_id(FK))   
 
- * **photos**(Photo_id, Post_id, photo_content)
+ * **Media**(Photo_id(FK), Video_id(FK), Post_id(FK), User_id(FK))
 
-  * **shares**(post_ID, User_Id) 
+  * **shares**(Share_id(PK), post_ID(FK), User_Id(FK)) 
