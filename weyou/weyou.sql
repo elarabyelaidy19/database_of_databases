@@ -15,17 +15,17 @@ create table user (
 );
 
 create table psots (
-  post_ID   Varchar(30)  not null, 
-  user_ID Varchar(30)    not null, 
+  post_id   Varchar(30)  not null, 
+  user_id Varchar(30)    not null, 
   post_content  Varchar(1000) not null,  
   Post_date  date
 
 ); 
 
 create table comments ( 
-  comment_ID Varchar(30)  not null, 
-  User_ID  Varchar(30)  not null, 
-  post_ID  Varchar(30)  not null, 
+  comment_id Varchar(30)  not null, 
+  User_id  Varchar(30)  not null, 
+  post_id  Varchar(30)  not null, 
   comment_content   Varchar(1000)  not null, 
   comment_date   date  
   
@@ -33,14 +33,14 @@ create table comments (
 
 
 create table pages (  
- Page_ID Varchar(30)  not null, 
+ Page_id Varchar(30)  not null, 
  Page_name Varchar(30)  not null, 
 );
 
 
 create table Page_Likes ( 
-like_id Varchar(30)  not null , 
-User_Id Varchar(30)  not null, 
-Page_Id Varchar(30)  not null
+like_id Varchar(30)  not null, 
+User_id Varchar(30)  not null, 
+Page_id Varchar(30)  not null
 );
 
