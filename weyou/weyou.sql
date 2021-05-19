@@ -15,8 +15,19 @@ create table user (
 );
 
 create table psots (
-  post_ID   Varchar  not null, 
-  user_ID Varchar    not null, 
-  post_content, 
-  Post_date 
-)  
+  post_ID   Varchar(30)  not null, 
+  user_ID Varchar(30)    not null, 
+  post_content  Varchar(1000) not null,  
+  Post_date  date
+
+); 
+
+create table comments ( 
+  comment_ID Varchar(30)  not null, 
+  User_ID  Varchar(30)  not null, 
+  post_ID  Varchar(30)  not null, 
+  comment_content   Varchar(1000)  not null, 
+  comment_date   date  
+  
+); 
+
