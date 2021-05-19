@@ -35,7 +35,7 @@
 
  * **psots**(post_ID(PK), user_ID(FK), post_content, , Post_date.)  
 
- * **pages**(Page_ID(PK), Page_name, Page_Content)
+ * **pages**(Page_ID(PK), Page_name)
 
  * **Page_Likes**(like_id(PK), User_Id(FK), Page_Id(FK))  
 

@@ -31,3 +31,15 @@ create table comments (
   
 ); 
 
+
+create table pages (  
+ Page_ID Varchar(30)  not null, 
+ Page_name Varchar(30)  not null,
+ Page_Content Varchar(30)  not null 
+
+);
+
+
+Page_Likes
+
+like_id(PK), User_Id(FK), Page_Id(FK))
