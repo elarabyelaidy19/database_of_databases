@@ -44,3 +44,24 @@ User_id Varchar(30)  not null,
 Page_id Varchar(30)  not null
 );
 
+
+create table Reactions( 
+  reaction_ID   Varchar(30)  not null, 
+  post_id   Varchar(30)  not null, 
+  User_id   Varchar(30)  not null
+);  
+
+
+create table Media( 
+  Photo_id Varchar(30)  not null, 
+  Video_id  Varchar(30)  not null, 
+  Post_id Varchar(30)  not null, 
+  User_id  Varchar(30)  not null 
+  );
+
+
+create table shares (
+  Share_id    Varchar(30)  not null, 
+  post_ID   Varchar(30)  not null,
+  User_Id  Varchar(30)  not null
+) 
