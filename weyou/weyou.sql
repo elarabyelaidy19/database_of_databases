@@ -14,6 +14,7 @@ create table user (
   Education  Varchar(50)
 );
 
+
 create table psots (
   post_id   Varchar(30)  not null, 
   user_id Varchar(30)    not null, 
@@ -21,6 +22,7 @@ create table psots (
   Post_date  date
 
 ); 
+
 
 create table comments ( 
   comment_id Varchar(30)  not null, 
@@ -57,11 +59,11 @@ create table Media(
   Video_id  Varchar(30)  not null, 
   Post_id Varchar(30)  not null, 
   User_id  Varchar(30)  not null 
-  );
+);
 
 
 create table shares (
   Share_id    Varchar(30)  not null, 
   post_ID   Varchar(30)  not null,
   User_Id  Varchar(30)  not null
-) 
+);
