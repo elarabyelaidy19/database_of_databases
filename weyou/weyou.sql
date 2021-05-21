@@ -1,5 +1,5 @@
 create table user ( 
-  User_id  Varchar(15)  not null, 
+  User_id  Varchar(15)  primary key, 
   FName  Varchar(30)  not null,
   LName  Varchar(30)  not null ,
   password   Varchar(30) not null ,  
@@ -16,7 +16,7 @@ create table user (
 
 
 create table psots (
-  post_id   Varchar(30)  not null, 
+  post_id  Varchar(30)  not null, 
   user_id Varchar(30)    not null, 
   post_content  Varchar(1000) not null,  
   Post_date  date
