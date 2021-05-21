@@ -16,46 +16,46 @@ create table user (
 
 
 create table psots (
-  post_id  Varchar(30)  not null, 
-  user_id Varchar(30)    not null, 
+  post_id  Varchar(30)  primary key, 
   post_content  Varchar(1000) not null,  
-  Post_date  date
-
+  Post_date  date, 
+  foreign key (user_id) references user 
+  
 ); 
 
 
 create table comments ( 
-  comment_id Varchar(30)  not null, 
-  User_id  Varchar(30)  not null, 
-  post_id  Varchar(30)  not null, 
+  comment_id Varchar(30)  primary key,  
   comment_content   Varchar(1000)  not null, 
-  comment_date   date  
+  comment_date   date, 
+  foreign key (user_id) references user, 
+  foreign key (post_id) references psots  
   
 ); 
 
 
 create table pages (  
- Page_id Varchar(30)  not null, 
+ Page_id Varchar(30) primary key, 
  Page_name Varchar(30)  not null, 
 );
 
 
 create table Page_Likes ( 
-like_id Varchar(30)  not null, 
-User_id Varchar(30)  not null, 
+like_id Varchar(30) primary key, 
+foreign key (user_id) references user, 
 Page_id Varchar(30)  not null
 );
 
 
 create table Reactions( 
-  reaction_ID   Varchar(30)  not null, 
+  reaction_ID   Varchar(30)  primary key, 
   post_id   Varchar(30)  not null, 
   User_id   Varchar(30)  not null
 );  
 
 
 create table Media( 
-  Photo_id Varchar(30)  not null, 
+  Photo_id Varchar(30)  primary key, 
   Video_id  Varchar(30)  not null, 
   Post_id Varchar(30)  not null, 
   User_id  Varchar(30)  not null 
@@ -63,7 +63,7 @@ create table Media(
 
 
 create table shares (
-  Share_id    Varchar(30)  not null, 
+  Share_id    Varchar(30)  primary key, 
   post_ID   Varchar(30)  not null,
   User_Id  Varchar(30)  not null
 );
