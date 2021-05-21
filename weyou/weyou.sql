@@ -49,21 +49,21 @@ Page_id Varchar(30)  not null
 
 create table Reactions( 
   reaction_ID   Varchar(30)  primary key, 
-  post_id   Varchar(30)  not null, 
-  User_id   Varchar(30)  not null
+  foreign key (user_id) references user, 
+  foreign key (post_id) references psots
 );  
 
 
 create table Media( 
   Photo_id Varchar(30)  primary key, 
   Video_id  Varchar(30)  not null, 
-  Post_id Varchar(30)  not null, 
-  User_id  Varchar(30)  not null 
+  foreign key (user_id) references user, 
+  foreign key (post_id) references psots
 );
 
 
 create table shares (
   Share_id    Varchar(30)  primary key, 
-  post_ID   Varchar(30)  not null,
-  User_Id  Varchar(30)  not null
+  foreign key (user_id) references user, 
+  foreign key (post_id) references psots
 );
